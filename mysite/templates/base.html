@@ -1,5 +1,6 @@
 {% load static wagtailcore_tags wagtailuserbar %}
 {% load sass_tags %}
+{% load render_bundle from webpack_loader %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +42,7 @@
         {% block content %}{% endblock %}
 
         {# Global javascript #}
-        <script type="text/javascript" src="{% static 'js/mysite.js' %}"></script>
+        {% render_bundle 'main' 'js' %}
 
         {% block extra_js %}
         {# Override this in templates to add extra javascript #}

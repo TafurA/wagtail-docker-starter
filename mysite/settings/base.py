@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     
     "sass_processor",
     "compressor",
+    "webpack_loader"
 ]
 
 MIDDLEWARE = [
@@ -158,6 +159,14 @@ STATICFILES_DIRS = [
     BASE_DIR / "assets/ui",
     BASE_DIR / "assets",
 ]
+
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'BUNDLE_DIR_NAME': 'webpack_bundles/',
+        'STATS_FILE': BASE_DIR / 'webpack-stats.json',
+        'POLL_INTERVAL': 0.1,
+    }
+}
 
 SASS_PROCESSOR_INCLUDE_DIRS = [
     BASE_DIR / "assets/ui/",
