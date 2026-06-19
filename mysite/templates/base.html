@@ -1,4 +1,5 @@
 {% load static wagtailcore_tags wagtailuserbar %}
+{% load sass_tags %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +25,10 @@
         {% endif %}
 
         {# Global stylesheets #}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/mysite.css' %}">
+        <link 
+        rel="stylesheet"
+        type="text/css"
+        href="{% sass_src 'ui/theme.scss' %}">
 
         {% block extra_css %}
         {# Override this in templates to add extra stylesheets #}

@@ -50,6 +50,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    
+    "sass_processor",
+    "compressor",
 ]
 
 MIDDLEWARE = [
@@ -147,11 +150,24 @@ USE_TZ = True
 STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.FileSystemFinder",
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+    "sass_processor.finders.CssFinder",
 ]
 
 STATICFILES_DIRS = [
     PROJECT_DIR / "static",
+    BASE_DIR / "assets/ui",
+    BASE_DIR / "assets",
 ]
+
+SASS_PROCESSOR_INCLUDE_DIRS = [
+    BASE_DIR / "assets/ui/",
+    BASE_DIR / "node_modules",
+]
+
+SASS_PROCESSOR_INCLUDE_FILE_PATTERN = r"^.+\.scss$"
+SASS_PRECISION = 8
+COMPRESS_OFFLINE = True 
+SASS_PROCESSOR_ENABLED = True
 
 STATIC_ROOT = BASE_DIR / "static"
 STATIC_URL = "/static/"
