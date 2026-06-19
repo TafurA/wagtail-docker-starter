@@ -403,6 +403,18 @@ django = ">=5.2"
 test = ["pytest-django (>=4.0,<5.0)", "pytest-pythonpath (>=0.7,<1.0)"]
 
 [[package]]
+name = "django-webpack-loader"
+version = "3.2.4"
+description = "Transparently use webpack with django"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "django_webpack_loader-3.2.4-py2.py3-none-any.whl", hash = "sha256:a9d345746ae4d0700b9a86a7f0683ab8282c56a3a32736070f27ad658a9bfcb2"},
+    {file = "django_webpack_loader-3.2.4.tar.gz", hash = "sha256:0a253113ea6b150403cd2de802e732872c1d5e3185f0ad4a7fac673c00ae5af2"},
+]
+
+[[package]]
 name = "djangorestframework"
 version = "3.17.1"
 description = "Web APIs for Django, made easy."
@@ -1052,4 +1064,4 @@ wand = ["Wand (>=0.6,<1.0)"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.14"
-content-hash = "811d455d249cd427dfd29eaf8181e7ce5e7bd344c87ed4964d895f2c68541cd6"
+content-hash = "af1c18c78e2501bae76271f2ca89449e3e24033dc25452fccad7faff831c6911"

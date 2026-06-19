@@ -173,6 +173,9 @@ django-tasks==0.12.0 ; python_version >= "3.14" \
 django-treebeard==5.2.2 ; python_version >= "3.14" \
     --hash=sha256:1ca902609860e1e9d87a531c34397ebca7f0d5fc72c6f8dd83c808eb6838c0c5 \
     --hash=sha256:4863191d8cd63daaa985f0853293ccae8c459e3d44963c4e4eec80dae7156e98
+django-webpack-loader==3.2.4 ; python_version >= "3.14" \
+    --hash=sha256:0a253113ea6b150403cd2de802e732872c1d5e3185f0ad4a7fac673c00ae5af2 \
+    --hash=sha256:a9d345746ae4d0700b9a86a7f0683ab8282c56a3a32736070f27ad658a9bfcb2
 django==6.0.6 ; python_version >= "3.14" \
     --hash=sha256:25148b1194c47c2e685e5f5e9c5d59c78b075dfd282cb9618861ba6c1708f4d2 \
     --hash=sha256:ad03916ba59523d781ae5c3f631960c23d69a9d9c43cecda52fc23b47e953713
