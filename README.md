@@ -14,6 +14,8 @@ Un kit de inicio (starter kit) completamente dockerizado y listo para producció
     * Django
     * Wagtail
 
+2. Actualizar la carpeta y variables "mysite" con el entorno real del proyecto. 
+
 ## Desarrollo
 
 El proyecto se configura por medio de variables de ambiente.
