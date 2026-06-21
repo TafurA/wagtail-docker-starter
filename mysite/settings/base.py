@@ -168,7 +168,6 @@ STATICFILES_FINDERS = [
 ]
 
 STATICFILES_DIRS = [
-    PROJECT_DIR / "static",
     BASE_DIR / "assets/ui",
     BASE_DIR / "assets",
 ]
